@@ -11,3 +11,12 @@ class Coffee:
     def size(self):
         return self._size
 
+    # Setter for size (Handles validation)
+    @size.setter
+    def size(self, value):
+        valid_sizes = ["Small", "Medium", "Large"]
+        if value not in valid_sizes:
+            print("size must be Small, Medium, or Large")
+            self._size = None
+        else:
+            self._size = value
