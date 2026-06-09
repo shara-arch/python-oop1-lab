@@ -20,3 +20,7 @@ class Coffee:
             self._size = None
         else:
             self._size = value
+    # Method to tip the server
+    def tip(self):
+        print("This coffee is great, here’s a tip!")
+        self.price += 1
