@@ -5,7 +5,7 @@ class Book:
         self.title = title
         # Initializing via the setter property ensures validation occurs immediately
         self.page_count = page_count
-        
+
     # Getter for page_count
     @property
     def page_count(self):
@@ -20,3 +20,8 @@ class Book:
             self._page_count = None 
         else:
             self._page_count = value
+    
+    # Method to turn a page
+    def turn_page(self):
+        print("Flipping the page...wow, you read fast!")
+        
